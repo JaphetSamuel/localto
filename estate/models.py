@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from uuid import uuid4
+from django.contrib.auth.models import User
 
 # Create your models here.
 #fonction utiles
@@ -12,6 +13,7 @@ def image_directory(instance, filename):
 
 
 class Agent(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, default=1)
     nom = models.CharField(max_length=100, verbose_name=_("Nom"))
     prenom = models.CharField(max_length=100, verbose_name=_("Prénom"))
     telephone = models.CharField(max_length=100, verbose_name=_("Téléphone"))
