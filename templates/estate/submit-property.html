@@ -66,7 +66,7 @@
                             <div class="col-sm-12"> 
                                 <div class="col-sm-12"> 
                                     <div class="form-group">
-                                        <label>Property Description :</label>
+                                        <label>Description :</label>
                                         <textarea name="descrition" class="form-control" ></textarea>
                                     </div> 
                                 </div> 
@@ -97,62 +97,81 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="form-group">
-                                        <label>Property Statue  :</label>
-                                        <select id="basic" class="selectpicker show-tick form-control">
-                                            <option> -Status- </option>
-                                            <option>Rent </option>
-                                            <option>Boy</option>
-                                            <option>used</option>  
+                                        <label>Status  :</label>
+                                        <br>
 
-                                        </select>
+                                        <input type="checkbox" name="enVente" id="vente">
+                                        <label for="vente">Vente</label>
+                                        <i class="mr-3"> - </i>
+                                        <input type="checkbox" name="enLocation" id="location">
+                                        <label for="location">Location</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="form-group">
-                                        <label>Property Statue  :</label>
-                                        <select id="basic" class="selectpicker show-tick form-control">
-                                            <option> -Status- </option>
-                                            <option>Rent </option>
-                                            <option>Boy</option>
-                                            <option>used</option>  
-
-                                        </select>
+                                        <label>Superficie :</label>
+                                        <input type="number" name="superficie" id="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 padding-top-15">                                                   
-                                <div class="col-sm-4">
+                            <div class="col-sm-12 padding-top-15">
+
+                                <div class="col-sm-2">
                                     <div class="form-group">
-                                        <label for="property-geo">Min bed :</label>
-                                        <input type="text" class="span2" value="" data-slider-min="0" 
-                                               data-slider-max="600" data-slider-step="5" 
-                                               data-slider-value="[250,450]" id="min-bed" ><br />
-                                        <b class="pull-left color">1</b> 
-                                        <b class="pull-right color">120</b>
+                                        <label for="property-geo">nombre de pièces :</label>
+                                        <input type="number" name="nb_pieces" class="form-control" />
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
 
+                                <div class="col-sm-2">
                                     <div class="form-group">
-                                        <label for="price-range">Min baths :</label>
-                                        <input type="text" class="span2" value="" data-slider-min="0" 
-                                               data-slider-max="600" data-slider-step="5" 
-                                               data-slider-value="[250,450]" id="min-baths" ><br />
-                                        <b class="pull-left color">1</b> 
-                                        <b class="pull-right color">120</b>
+                                        <label for="property-geo">nombre de chambres :</label>
+                                        <input type="number" name="nb_chambres" class="form-control" />
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
 
+                                <div class="col-sm-2">
                                     <div class="form-group">
-                                        <label for="property-geo">Property geo (m2) :</label>
-                                        <input type="text" class="span2" value="" data-slider-min="0" 
-                                               data-slider-max="600" data-slider-step="5" 
-                                               data-slider-value="[50,450]" id="property-geo" ><br />
-                                        <b class="pull-left color">40m</b> 
-                                        <b class="pull-right color">12000m</b>
+                                        <label for="property-geo">nombre de salle de bain :</label>
+                                        <input type="number" name="nb_salles_de_bain" class="form-control" />
                                     </div>
-                                </div>   
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label >nombre de toilettes :</label>
+                                        <input type="number" name="nb_toilettes" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label >nombre de pièces :</label>
+                                        <input type="number" name="nb_pieces" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label >nombre de garages:</label>
+                                        <input type="number" name="nb_garages" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label for="property-geo">nombre de étages :</label>
+                                        <input type="number" name="nb_etages" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label for="property-geo">nombre de Terrasses :</label>
+                                        <input type="number" name="nb_terrasses" class="form-control" />
+                                    </div>
+                                </div>
+                                   
                             </div>
                             <div class="col-sm-12 padding-top-15">
                                 <div class="col-sm-3">
