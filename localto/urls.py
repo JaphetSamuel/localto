@@ -22,5 +22,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('faq/', TemplateView.as_view(template_name='base.html')),
-    path('', include('estate.urls')),
+    path('estate/', include('estate.urls')),
+    path('', TemplateView.as_view(template_name='home.html')),
+    path('unicorn', include('django_unicorn.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

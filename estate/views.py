@@ -1,6 +1,6 @@
 from django.forms.models import ModelForm
 from django.shortcuts import render
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, ListView, DeleteView
 from .forms import ProprieteForm
 
 from .models import Propriete
@@ -24,3 +24,8 @@ class SubmitPropretyView(CreateView):
         context = super().get_context_data(**kwargs)
         context['page_title'] = 'Soumettre une propriété'
         return context
+
+
+class ProprieteListeView(ListView):
+    model = Propriete
+    template_name = 'estate/property-list.html'

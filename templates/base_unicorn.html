@@ -1,4 +1,5 @@
 {% load static  %}
+{% load unicorn %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -35,10 +36,12 @@
         <link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+        {% unicorn_scripts %}
 
         {% block styles %}{% endblock %}
     </head>
     <body>
+        {% csrf_token %}
 
         <div id="preloader">
             <div id="status">&nbsp;</div>
@@ -50,7 +53,7 @@
 
         {% include 'layouts/navbar.html' %}
         <!-- End of nav bar -->
-            {% block home-content %}
+ 
          <div class="page-head"> 
             <div class="container">
                 <div class="row">
@@ -218,7 +221,7 @@
                 {% endblock content %}
             </div>
         </div>
-        {% endblock home-content %}
+
      <!-- Footer area-->
         {% include 'layouts/footer.html'%}
 
@@ -243,7 +246,7 @@
 
         <script src="{% static 'assets/js/main.js' %}"></script>
 
-        {% block js %}{% endblock %}
+        {% block 'js' %}{% endblock %}
 
     </body>
 </html>

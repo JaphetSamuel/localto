@@ -1,0 +1,21 @@
+
+Localto:
+  ☐ initialisation du projet git  @started(21-12-11 11:08)
+
+  estate:
+    ✔ Logique page d'accueille @done(21-12-11 11:29)
+    création de propriété par un agent:
+      ☐ formulaire de création
+      ☐ page de création
+      ☐ validation de la création
+      ☐ création de la propriété
+    logique actions niveau 1 de l'agent:  
+      ☐ liste des propriétés de l'agent
+      ☐ page de details propriété
+    logique action niveau 1 du client:
+      ☐ liste des propriétés disponibles
+      ☐ filtre sur la liste de propriété
+      ☐ page de details propriété
+
+
+    
